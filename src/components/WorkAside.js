@@ -5,7 +5,7 @@ function WorkAside() {
     return (
         <aside id="work">
         <Carousel />
-    </aside>
+        </aside>
     )
 }
 

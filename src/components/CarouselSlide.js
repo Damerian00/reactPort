@@ -7,8 +7,8 @@ function CarouselSlide({imageData, i, n}) {
     return (
        <>
         {images.map((image) => (
-        <li>
-        <section data-pos ={image.id} key={`${image.id}abc`}>
+        <li key={`${image.id}abc`}>
+        <section data-pos ={image.id} >
         <img className ="picPos" src= {image.imgSrc} alt={image.name} />
             <div className="content">
                 <h3>{image.name}</h3>

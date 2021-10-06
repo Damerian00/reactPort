@@ -1,6 +1,8 @@
 import React from 'react'
 
-function Featured() {
+
+function Featured({src}) {
+
     return (
         <section className="featured">
         <img className="starred" src = "assets/images/miro_ss.png" />

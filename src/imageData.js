@@ -1,6 +1,6 @@
 
 
-const imageData = [
+export const ImageData = [
     {
         id: 0,
         name: "Miro Website",
@@ -62,6 +62,6 @@ const imageData = [
 
 
 
-export default imageData;
+
 
 

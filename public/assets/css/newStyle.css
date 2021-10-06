@@ -115,8 +115,7 @@ margin: 0 1rem;
     margin:1rem;
     text-align: center;
 }
-#aboutMe p{
-}
+
 .profilePic{
         width: 200px;
         border: 2px solid black;
@@ -218,7 +217,7 @@ right: 1rem;
 .sites .slideHolder{
  flex-direction: row;   
 }
-.sites ul li panel{
+.sites ul li section{
     display: flex;
     flex-direction: row;
     width:837px;
@@ -499,6 +498,10 @@ top: 0
         height: auto;
         margin: 0;
     }
+    #aboutMe p{
+    overflow-y: scroll;
+    height: 19vh;
+}
     .sites{
         padding-left: 2vw;
     }
