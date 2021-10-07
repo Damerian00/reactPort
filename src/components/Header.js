@@ -7,7 +7,7 @@ function Header() {
         <div className = "off-right">
         <div className="brand">
             <h1>Patrick Price</h1>
-            <p>Web Coder</p>
+            <p>Web Developer</p>
         </div>
         <Nav />
         </div>
