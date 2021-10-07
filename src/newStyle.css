@@ -206,6 +206,7 @@ right: 1rem;
     margin: auto;
     z-index: 100;
     transition: transform .5s, opacity .5s, z-index .5s; 
+    list-style: none;
 }
 .slide.initial,
 .slide.active {
@@ -225,7 +226,9 @@ right: 1rem;
     max-height: 195px;
     
 }
-
+.slideWrapper li{
+    list-style: none;
+}
 .slide.prev,
 .slide.next {
   z-index: 800;

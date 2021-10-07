@@ -4,7 +4,7 @@ function Aboutme() {
     return (
         <section id="aboutMe">
             <section>
-                <img src = "assets/images/headshot.jpeg" className="profilePic" alt ="profile pic" />
+                <img src = {process.env.PUBLIC_URL +"/"+ "assets/images/headshot.jpeg"} className="profilePic" alt ="profile pic" />
               <div>  
                 <h2>About Me</h2>
                 <p> My name is Patrick, I have been exploring the world of coding since High School when I first started writing programs for my graphing calculator. Since then I have learned a few languages such as: HTML5, JavaScript, CSS, and some Java. Currently all the sites on this page are mock sites that were made as an assignment for a coding class environment or something I created to learn and test my skills out.</p>

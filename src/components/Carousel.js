@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import CarouselSlide from './CarouselSlide'
 import {ImageData} from '../ImageData'
 
-function Carousel() {
+function Carousel({setFeaturedSrc}) {
     const [current, setCurrent] = useState(0)
     const slideArray = [
         <CarouselSlide imageData={ImageData} i={0} n={3}/>,
@@ -29,7 +29,7 @@ function Carousel() {
           <li className={index === current ? 'slide active' : 'slide'} key={index}> 
           
                     <ul>
-                    <CarouselSlide imageData={ImageData} i={3 * index} n={3 * index + 3}/>
+                    <CarouselSlide imageData={ImageData} i={3 * index} n={3 * index + 3} setFeaturedSrc = {setFeaturedSrc}/>
                     </ul>
          </li>
          )  

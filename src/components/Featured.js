@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 
 
-function Featured() {
-    const [FeaturedSrc, setFeaturedSrc] = useState ('assets/images/miro_ss.png')
+function Featured({featuredSrc}) {
+    
 
     // const ChangeSrc = event => {
     
@@ -13,7 +13,7 @@ function Featured() {
     return (
        
     <section className="featured">
-    <img className="starred" src = {FeaturedSrc}  alt="Featured"/>
+    <img className="starred" src = {featuredSrc}  alt="Featured"/>
     </section>
     )
 

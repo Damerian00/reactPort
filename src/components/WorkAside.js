@@ -1,10 +1,10 @@
 import React from 'react'
 import Carousel from './Carousel'
 
-function WorkAside() {
+function WorkAside({setFeaturedSrc}) {
     return (
         <aside id="work">
-        <Carousel />
+        <Carousel setFeaturedSrc = {setFeaturedSrc}/>
         </aside>
     )
 }

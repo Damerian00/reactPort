@@ -1,8 +1,6 @@
 import React from 'react'
-import ChangeSrc from './Featured';
 
-
-function CarouselSlide({imageData, i, n}) {
+function CarouselSlide({imageData, i, n, setFeaturedSrc}) {
  const images = imageData.length > 3? imageData.slice(i, n): imageData;
 
  
@@ -12,7 +10,7 @@ function CarouselSlide({imageData, i, n}) {
         {images.map((image) => (
         <li key={`${image.id}abc`}>
         <section data-pos ={image.id} >
-        <img className ="picPos" src= {image.imgSrc} alt={image.name} onClick={(e) => {ChangeSrc(e)}}/>
+        <img className ="picPos" src= {process.env.PUBLIC_URL +"/"+ image.imgSrc} alt={image.name} onClick={(e) => {setFeaturedSrc(process.env.PUBLIC_URL +"/"+ image.imgSrc)}}/>
             <div className="content">
                 <h3>{image.name}</h3>
                 <p>{image.descr}</p>

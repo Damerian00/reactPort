@@ -5,12 +5,12 @@ import WorkAside from './WorkAside';
 /* put setstate hook here to store set Featured*/
 
 function Main() {
-    const [featuredState, setFeaturedState] = useState({});
+    const [featuredSrc, setFeaturedSrc] = useState (`${process.env.PUBLIC_URL}/assets/images/miro_ss.png`)
     return (
         <main>
         <Aboutme />
-        <Featured />
-        <WorkAside />
+        <Featured featuredSrc = {featuredSrc}/>
+        <WorkAside setFeaturedSrc = {setFeaturedSrc}/>
     </main>
     )
 }
