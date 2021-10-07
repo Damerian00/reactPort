@@ -1,15 +1,18 @@
 import React from 'react'
-
+import ChangeSrc from './Featured';
 
 
 function CarouselSlide({imageData, i, n}) {
  const images = imageData.length > 3? imageData.slice(i, n): imageData;
+
+ 
+
     return (
        <>
         {images.map((image) => (
         <li key={`${image.id}abc`}>
         <section data-pos ={image.id} >
-        <img className ="picPos" src= {image.imgSrc} alt={image.name} />
+        <img className ="picPos" src= {image.imgSrc} alt={image.name} onClick={(e) => {ChangeSrc(e)}}/>
             <div className="content">
                 <h3>{image.name}</h3>
                 <p>{image.descr}</p>
