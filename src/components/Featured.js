@@ -1,13 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 
-function Featured({ChangeSrc}) {
+function Featured() {
     const [FeaturedSrc, setFeaturedSrc] = useState ('assets/images/miro_ss.png')
 
-    const ChangeSrc = event => {
+    // const ChangeSrc = event => {
     
-      props.setFeaturedSrc(event.target.src)
-    }
+    //   props.setFeaturedSrc(event.target.src)
+    // }
     
     
     return (
