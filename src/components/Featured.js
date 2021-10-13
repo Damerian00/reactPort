@@ -1,14 +1,9 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 
 function Featured({featuredSrc}) {
     
-
-    // const ChangeSrc = event => {
-    
-    //   props.setFeaturedSrc(event.target.src)
-    // }
-    
+   
     
     return (
        
