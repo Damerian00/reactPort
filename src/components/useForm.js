@@ -26,7 +26,7 @@ const handleSubmit = e => {
 };
     useEffect( () => {
         if(Object.keys(errors).length === 0 && isSubmitting) {
-            callback()
+            console.log(values);
         }
     }, 
     [errors]

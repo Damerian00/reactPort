@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import FormContact from './FormContact'
-import FormSuccess from './FormSuccess'
+import {Link} from 'react-router-dom'
 
 const buttonSubmitEl = document.getElementsByClassName('btn-Submit')
 
@@ -12,11 +12,11 @@ function Form() {
     }
     return (
         <div>
-           {!isSubmitted ? (
            <FormContact submitForm = {submitForm} />
-           ) : (
-           <FormSuccess />
-           )}
+           <Link to='/reactPort'>
+                <button className="btnHome">Home</button>
+                </Link>
+         
         </div>
     )
 }

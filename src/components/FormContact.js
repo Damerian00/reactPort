@@ -15,15 +15,15 @@ const {handleChange, values, handleSubmit, errors} = useForm(
          <div className ="form-inputs">
          <label htmlFor = "name" className = "form-label"> Name: </label>
          <input id="contactName" type="text" name = "name" className = "form-input" placeholder = "Enter your name here" value={values.name} onChange={handleChange} />
-         {errors.name && <p>{errors.name}</p>}
          <label htmlFor = "email" className = "form-label"> Email: </label>
-         <input id="contactEmail" type="text" name = "email" className = "form-input" placeholder = "Enter your name here" value={values.email} onChange={handleChange}/>
-         {errors.email && <p>{errors.email}</p>}
+         <input id="contactEmail" type="text" name = "email" className = "form-input" value={values.email} onChange={handleChange}/>
          <label htmlFor = "message" className = "form-label"> Your message: </label>
          <textarea id="contactMessage" name= "message" className="form-control" rows="5" value={values.message} onChange={handleChange}></textarea> 
-         {errors.message && <p>{errors.message}</p>}       
          </div>   
          <button className= "btn-Submit" type="submit">Contact Me</button>
+         {errors.name && <p>{errors.name}</p>}
+         {errors.email && <p>{errors.email}</p>}
+         {errors.message && <p>{errors.message}</p>}       
         </form>
     )
 }

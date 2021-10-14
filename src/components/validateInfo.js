@@ -1,12 +1,12 @@
 export default  function validateInfo(values) {
     let errors = {}
-    const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i;
 if(!values.name.trim()) {
     errors.name = "Name Required"
 }
 
 if(!values.name.trim()) {
-    errors.name = "Name Required"
+    errors.email = "Email address is invalid"
 } else if (!regex.test(values.email)) {
     errors.email = "Email address is invalid"
 }

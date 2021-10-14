@@ -11,8 +11,8 @@ function App() {
   <>
   <Header />
   <Switch>
-  <Route exact path="/" component={Main}/>
-  <Route exact path="/form" component={Form} />
+  <Route exact path="/reactPort" component={Main}/>
+  <Route exact path="/contactMe" component={Form} />
   </Switch>
   <Footer />
   </>

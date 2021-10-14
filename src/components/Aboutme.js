@@ -1,10 +1,13 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 function Aboutme() {
     return (
         <section id="aboutMe">
             <section>
                 <img src = {process.env.PUBLIC_URL +"/"+ "assets/images/headshot.jpeg"} className="profilePic" alt ="profile pic" />
+                <Link to='/contactMe'>
+                <button className="btnContact">Message Me</button>
+                </Link>   
               <div>  
                 <h2>About Me</h2>
                 <p> My name is Patrick, I have been exploring the world of coding since High School when I first started writing programs for my graphing calculator. Since then I have learned a few languages such as: HTML5, JavaScript, CSS, and some Java. Currently all the sites on this page are mock sites that were made as an assignment for a coding class environment or something I created to learn and test my skills out.</p>
