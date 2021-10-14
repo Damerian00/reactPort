@@ -11,7 +11,7 @@ function Header() {
             <p>Web Developer</p>
         </div>
         <Nav />
-       
+       <Form />
         </div>
     </header>
     )
