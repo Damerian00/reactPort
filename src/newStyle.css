@@ -124,7 +124,7 @@ margin: 0 auto;
     display: block;
     position: relative;
     font-size: 1.5rem;
-    margin: 0 auto;
+    margin: 0 auto 10vh;
 }
 #aboutMe{
 flex:1;
