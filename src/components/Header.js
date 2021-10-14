@@ -1,4 +1,5 @@
 import React from 'react'
+import Form from './Form';
 import Nav from "./Nav";
 
 function Header() {
@@ -10,6 +11,7 @@ function Header() {
             <p>Web Developer</p>
         </div>
         <Nav />
+       
         </div>
     </header>
     )
