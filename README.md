@@ -60,7 +60,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-This is my first attept at creating a portfolio for myself. It utilizes basic HTML and CSS as well as some JS. It was made to be responsive and adjust size based on the media you are viewing it with.
+This project is of me taking my last portfolio and adding react to it to create the same functionality as the one without react . It utilizes basic HTML and CSS as well as some JS. It was made to be responsive and adjust size based on the media you are viewing it with.
 
 
 
